@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farsi Laban — Authentic Dubai Sweets</title>
+  <meta name="description" content="Farsi Laban brings you the most authentic, creamy, and indulgent Dubai sweets. Discover our signature flavours: Pistachio Heba Cake, Fazea Chocolate Cake, De Paris, Nutella Koshari, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-circle-sm">
+          <img src="images/logo.jpg" alt="Farsi Laban Logo" class="nav-logo-img" />
+        </div>
+        <span class="brand-name">Farsi Laban</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero" id="nav-home">Home</a></li>
+        <li><a href="#story" id="nav-story">Our Story</a></li>
+        <li><a href="#flavours" id="nav-flavours">Flavours</a></li>
+        <li><a href="#order" id="nav-order">Order</a></li>
+        <li><a href="#gallery" id="nav-gallery">Gallery</a></li>
+      </ul>
+      <a href="https://www.swiggy.com" target="_blank" class="nav-cta" id="nav-swiggy-btn">Order on Swiggy</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#hero" id="mob-home">Home</a></li>
+      <li><a href="#story" id="mob-story">Our Story</a></li>
+      <li><a href="#flavours" id="mob-flavours">Flavours</a></li>
+      <li><a href="#order" id="mob-order">Order</a></li>
+      <li><a href="#gallery" id="mob-gallery">Gallery</a></li>
+      <li><a href="https://www.swiggy.com" target="_blank" id="mob-swiggy">Order on Swiggy</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="hero-container">
+      <!-- Left: Logo -->
+      <div class="hero-left" data-animate="fade-up">
+        <div class="hero-logo-circle">
+          <img src="images/logo.jpg" alt="Farsi Laban — Authentic Dubai Sweets" class="hero-logo-img" />
+        </div>
+        <div class="hero-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Authentic Dubai Recipe
+        </div>
+      </div>
+
+      <!-- Right: Text + Products -->
+      <div class="hero-right" data-animate="fade-up" data-delay="200">
+        <div class="hero-text">
+          <p class="hero-subtitle">Welcome to Farsi Laban</p>
+          <h2 class="hero-heading">Discover Different<br>Kinds of <span class="hero-highlight">Laban</span></h2>
+          <p class="hero-desc">Handcrafted with the finest ingredients, our desserts bring the soul of Dubai to every bite. Creamy, rich, and utterly irresistible.</p>
+          <div class="hero-actions">
+            <a href="https://www.swiggy.com" target="_blank" class="btn-swiggy" id="hero-swiggy-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+              Order on Swiggy
+            </a>
+            <a href="#flavours" class="btn-outline-white" id="hero-explore-btn">Explore Flavours</a>
+          </div>
+        </div>
+
+        <!-- Floating Product Cards -->
+        <div class="hero-products">
+          <div class="product-float p1" data-animate="float-in" data-delay="300">
+            <div class="float-card">
+              <img src="images/pistachio_heba.png" alt="Pistachio Kinder Heba Cake" />
+              <span>Pistachio Heba</span>
+            </div>
+          </div>
+          <div class="product-float p2" data-animate="float-in" data-delay="450">
+            <div class="float-card">
+              <img src="images/chocolate_cake.png" alt="Fazea Chocolate Cake" />
+              <span>Fazea Chocolate</span>
+            </div>
+          </div>
+          <div class="product-float p3" data-animate="float-in" data-delay="600">
+            <div class="float-card">
+              <img src="images/nutella_koshari_heba.png" alt="Nutella Koshari Heba" />
+              <span>Nutella Heba</span>
+            </div>
+          </div>
+          <div class="product-float p4" data-animate="float-in" data-delay="750">
+            <div class="float-card">
+              <img src="images/nutella_koshari.png" alt="Nutella Koshari" />
+              <span>Nutella Koshari</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Wave -->
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,60 C240,100 480,20 720,60 C960,100 1200,20 1440,60 L1440,100 L0,100 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>✦ Fazea Chocolate Cake</span>
+      <span>✦ Pistachio Heba Cake</span>
+      <span>✦ De Paris</span>
+      <span>✦ Pistachio Belgian Chocolate Heba</span>
+      <span>✦ Nutella Koshari</span>
+      <span>✦ Authentic Dubai Sweets</span>
+      <span>✦ Fazea Chocolate Cake</span>
+      <span>✦ Pistachio Heba Cake</span>
+      <span>✦ De Paris</span>
+      <span>✦ Pistachio Belgian Chocolate Heba</span>
+      <span>✦ Nutella Koshari</span>
+      <span>✦ Authentic Dubai Sweets</span>
+    </div>
+  </div>
+
+  <!-- ===== OUR STORY ===== -->
+  <section class="story" id="story">
+    <div class="story-container">
+      <div class="story-text" data-animate="fade-right">
+        <p class="section-label">Who We Are</p>
+        <h2 class="section-heading blue">Our Story</h2>
+        <div class="story-divider"></div>
+        <p class="story-body">
+          Farsi Laban was born from a deep love for the rich dessert culture of Dubai. We believed that the world deserved to taste the magic of authentic Laban — creamy, layered, and crafted with tradition.
+        </p>
+        <p class="story-body">
+          Every spoonful is a journey through the vibrant streets of old Dubai. Our recipes are passed down through generations, perfected with the finest pistachios, Belgian chocolates, and the creamiest dairy.
+        </p>
+        <div class="story-stats">
+          <div class="stat-item">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Signature Flavours</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Authentic Recipe</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="story-images" data-animate="fade-left">
+        <div class="story-img-1">
+          <img src="images/pistachio_heba.png" alt="Pistachio Heba Cake — Farsi Laban" />
+          <div class="img-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Premium Quality
+          </div>
+        </div>
+        <div class="story-img-2">
+          <img src="images/nutella_koshari_heba.png" alt="Nutella Koshari Heba — Farsi Laban" />
+        </div>
+        <div class="story-img-decor">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#1A3A8F" d="M45.3,-52.1C57.5,-42.4,65.4,-26.3,67.1,-9.8C68.8,6.8,64.2,23.7,54.4,36.1C44.6,48.5,29.5,56.3,12.9,59.7C-3.7,63.1,-21.8,62,-34.7,53.5C-47.6,45,-55.2,29.1,-59.3,12C-63.4,-5.1,-64,-23.4,-56.4,-36.8C-48.7,-50.1,-32.9,-58.5,-17.2,-64.6C-1.5,-70.7,14.2,-74.6,27.5,-69.4C40.8,-64.3,33.1,-61.9,45.3,-52.1Z" transform="translate(100 100)" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLAVOURS MENU ===== -->
+  <section class="flavours" id="flavours">
+    <div class="flavours-container">
+      <div class="section-header" data-animate="fade-up">
+        <p class="section-label">What We Offer</p>
+        <h2 class="section-heading blue">Our Signature Flavours</h2>
+        <p class="section-subtext">Each creation is a masterpiece — crafted with premium ingredients and pure love for the art of Dubai sweets.</p>
+      </div>
+
+      <div class="flavours-grid">
+
+        <!-- Card 1: Fazea Chocolate Cake -->
+        <div class="flavour-card" id="card-fazea-choc" data-animate="scale-in" data-delay="0">
+          <div class="card-img-wrap">
+            <img src="images/chocolate_cake.png" alt="Fazea Chocolate Cake" />
+          </div>
+          <div class="card-body">
+            <div class="card-tag">Bestseller</div>
+            <h3 class="card-title">Fazea Chocolate Cake</h3>
+            <p class="card-desc">A decadent chocolate experience layered with rich cocoa cream and topped with crunchy chocolate crumbles. A true indulgence for the chocoholic soul.</p>
+            <a href="https://www.swiggy.com" target="_blank" class="btn-card" id="order-fazea">Order on Swiggy</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Pistachio Kinder Heba -->
+        <div class="flavour-card" id="card-pistachio-kinder" data-animate="scale-in" data-delay="100">
+          <div class="card-img-wrap">
+            <img src="images/pistachio_heba.png" alt="Pistachio Kinder Chocolate Heba Cake" />
+          </div>
+          <div class="card-body">
+            <div class="card-tag new-tag">Fan Favourite</div>
+            <h3 class="card-title">Pistachio Kinder Chocolate Heba Cake</h3>
+            <p class="card-desc">Velvety pistachio cream meets the beloved sweetness of Kinder chocolate, nestled in a soft, airy Heba cake. A dreamy combination that melts in your mouth.</p>
+            <a href="https://www.swiggy.com" target="_blank" class="btn-card" id="order-pistachio-kinder">Order on Swiggy</a>
+          </div>
+        </div>
+
+        <!-- Card 3: De Paris -->
+        <div class="flavour-card" id="card-de-paris" data-animate="scale-in" data-delay="200">
+          <div class="card-img-wrap">
+            <img src="images/de_paris.png" alt="De Paris" />
+          </div>
+          <div class="card-body">
+            <div class="card-tag premium-tag">Premium</div>
+            <h3 class="card-title">De Paris</h3>
+            <p class="card-desc">Inspired by the elegance of Parisian patisserie, this artisanal creation combines the finest flavours in a beautifully presented box — perfect for gifting.</p>
+            <a href="https://www.swiggy.com" target="_blank" class="btn-card" id="order-de-paris">Order on Swiggy</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Pistachio Belgian Chocolate Heba -->
+        <div class="flavour-card" id="card-pistachio-belgian" data-animate="scale-in" data-delay="300">
+          <div class="card-img-wrap">
+            <img src="images/nutella_koshari_heba.png" alt="Pistachio Belgian Chocolate Heba Cake" />
+          </div>
+          <div class="card-body">
+            <div class="card-tag">Signature</div>
+            <h3 class="card-title">Pistachio Belgian Chocolate Heba Cake</h3>
+            <p class="card-desc">Premium Belgian chocolate harmonises with lush pistachio in every layer of this iconic Heba cake. Sophisticated, rich, and utterly satisfying.</p>
+            <a href="https://www.swiggy.com" target="_blank" class="btn-card" id="order-pistachio-belgian">Order on Swiggy</a>
+          </div>
+        </div>
+
+        <!-- Card 5: Nutella Koshari -->
+        <div class="flavour-card wide-card" id="card-nutella-koshari" data-animate="scale-in" data-delay="400">
+          <div class="card-img-wrap wide-img">
+            <img src="images/nutella_koshari.png" alt="Nutella Koshari" />
+          </div>
+          <div class="card-body">
+            <div class="card-tag hot-tag">Hot Pick</div>
+            <h3 class="card-title">Nutella Koshari</h3>
+            <p class="card-desc">The beloved Egyptian classic meets a Farsi Laban twist — our Nutella Koshari brings together the creaminess of Nutella with traditional Koshari warmth. A bold, unique creation that you won't find anywhere else.</p>
+            <a href="https://www.swiggy.com" target="_blank" class="btn-card" id="order-nutella-koshari">Order on Swiggy</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORDER & FIND US ===== -->
+  <section class="order-section" id="order">
+    <div class="order-bg-pattern"></div>
+    <div class="order-container">
+      <div class="section-header light" data-animate="fade-up">
+        <p class="section-label light-label">Ready to Indulge?</p>
+        <h2 class="section-heading white">Order & Find Us</h2>
+        <p class="section-subtext light-text">Get your favourite Farsi Laban desserts delivered to your door, or come visit us in person.</p>
+      </div>
+
+      <div class="order-boxes">
+        <div class="order-box" id="order-delivery-box" data-animate="slide-left">
+          <div class="order-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="48" r="5" stroke="white" stroke-width="2.5"/>
+              <circle cx="50" cy="48" r="5" stroke="white" stroke-width="2.5"/>
+              <path d="M4 44H15M55 44H60M15 44V28L22 16H44L56 28V44M15 44H55" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 16V30H56V28" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M4 32H15" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M4 24H12" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="order-box-title">Order Now on Swiggy</h3>
+          <p class="order-box-desc">Fast delivery straight to your door. Fresh, sealed, and delicious — just the way it should be.</p>
+          <a href="https://www.swiggy.com" target="_blank" class="btn-order-box" id="delivery-swiggy-btn">
+            Order on Swiggy
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+
+        <div class="order-divider">
+          <span>or</span>
+        </div>
+
+        <div class="order-box" id="order-visit-box" data-animate="slide-right">
+          <div class="order-icon">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32 8C22.1 8 14 16.1 14 26C14 39 32 56 32 56C32 56 50 39 50 26C50 16.1 41.9 8 32 8Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="32" cy="26" r="7" stroke="white" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3 class="order-box-title">Visit Our Shop</h3>
+          <p class="order-box-desc">Experience the full Farsi Laban ambience. Taste, explore, and bring your favourite flavours home.</p>
+          <a href="#" class="btn-order-box" id="visit-shop-btn">
+            Get Directions
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-container">
+      <div class="section-header" data-animate="fade-up">
+        <p class="section-label">A Feast for the Eyes</p>
+        <h2 class="section-heading blue">Our Gallery</h2>
+        <p class="section-subtext">Every dessert tells a story. Here's a glimpse into the world of Farsi Laban.</p>
+      </div>
+
+      <div class="gallery-grid" data-animate="fade-up" data-delay="200">
+        <!-- Large feature image -->
+        <div class="gallery-item gallery-large" id="gallery-img-1">
+          <div class="gallery-img-wrap">
+            <img src="images/chocolate_cake.png" alt="Fazea Chocolate Cake — Farsi Laban" />
+            <div class="gallery-overlay">
+              <span>Fazea Chocolate Cake</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stack of 2 on the right -->
+        <div class="gallery-col">
+          <div class="gallery-item" id="gallery-img-2">
+            <div class="gallery-img-wrap">
+              <img src="images/pistachio_heba.png" alt="Pistachio Heba Cake — Farsi Laban" />
+              <div class="gallery-overlay">
+                <span>Pistachio Heba Cake</span>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-item" id="gallery-img-3">
+            <div class="gallery-img-wrap">
+              <img src="images/de_paris.png" alt="De Paris — Farsi Laban" />
+              <div class="gallery-overlay">
+                <span>De Paris</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second row -->
+      <div class="gallery-grid-2" data-animate="fade-up" data-delay="400">
+        <div class="gallery-item" id="gallery-img-4">
+          <div class="gallery-img-wrap">
+            <img src="images/nutella_koshari_heba.png" alt="Pistachio Belgian Chocolate Heba — Farsi Laban" />
+            <div class="gallery-overlay">
+              <span>Pistachio Belgian Heba</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" id="gallery-img-5">
+          <div class="gallery-img-wrap">
+            <img src="images/nutella_koshari.png" alt="Nutella Koshari — Farsi Laban" />
+            <div class="gallery-overlay">
+              <span>Nutella Koshari</span>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item gallery-cta-card" id="gallery-cta">
+          <div class="gallery-cta-inner">
+            <p class="gallery-cta-label">Taste the Difference</p>
+            <h3>Ready to try something extraordinary?</h3>
+            <a href="https://www.swiggy.com" target="_blank" class="btn-swiggy-dark" id="gallery-swiggy-btn">Order on Swiggy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,30 1440,40 L1440,0 L0,0 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-circle-footer">
+            <img src="images/logo.jpg" alt="Farsi Laban" class="footer-logo-img" />
+          </div>
+          <div>
+            <p class="footer-brand-name">Farsi Laban</p>
+            <p class="footer-brand-sub">Authentic Dubai Sweets</p>
+          </div>
+        </div>
+        <p class="footer-about">Handcrafted desserts inspired by the rich culinary heritage of Dubai. Every bite is a journey.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" id="footer-instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="social-link" id="footer-facebook" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-link" id="footer-tiktok" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="#" class="social-link" id="footer-whatsapp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#hero" id="footer-home">Home</a></li>
+          <li><a href="#story" id="footer-story">Our Story</a></li>
+          <li><a href="#flavours" id="footer-flavours">Flavours</a></li>
+          <li><a href="#order" id="footer-order">Order</a></li>
+          <li><a href="#gallery" id="footer-gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Our Flavours</h4>
+        <ul class="footer-links">
+          <li><a href="#flavours" id="footer-fazea">Fazea Chocolate Cake</a></li>
+          <li><a href="#flavours" id="footer-pistachio-k">Pistachio Kinder Heba</a></li>
+          <li><a href="#flavours" id="footer-de-paris">De Paris</a></li>
+          <li><a href="#flavours" id="footer-pistachio-b">Pistachio Belgian Heba</a></li>
+          <li><a href="#flavours" id="footer-nutella">Nutella Koshari</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Find Us</h4>
+        <ul class="footer-links address-links">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            55 C-Block, 38-C New No, 1st Main Rd, R.V. Nagar, VOC Nagar, Annanagar East, Chennai, Tamil Nadu 600102
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            hello@farsilaban.com
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            92893 61364
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Farsi Laban. All rights reserved. Crafted with ❤️ in Dubai.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
